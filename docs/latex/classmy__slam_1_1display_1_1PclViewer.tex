@@ -1,0 +1,80 @@
+\hypertarget{classmy__slam_1_1display_1_1PclViewer}{}\doxysection{my\+\_\+slam\+::display\+::Pcl\+Viewer Class Reference}
+\label{classmy__slam_1_1display_1_1PclViewer}\index{my\_slam::display::PclViewer@{my\_slam::display::PclViewer}}
+
+
+Collaboration diagram for my\+\_\+slam\+::display\+::Pcl\+Viewer\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=271pt]{classmy__slam_1_1display_1_1PclViewer__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmy__slam_1_1display_1_1PclViewer_a59ef3381be98782eb2428545cb220278}\label{classmy__slam_1_1display_1_1PclViewer_a59ef3381be98782eb2428545cb220278}} 
+typedef std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classmy__slam_1_1display_1_1PclViewer}{Pcl\+Viewer}} $>$ {\bfseries Ptr}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmy__slam_1_1display_1_1PclViewer_a34e6eef59c74ac6174295bfa93bb6081}\label{classmy__slam_1_1display_1_1PclViewer_a34e6eef59c74ac6174295bfa93bb6081}} 
+{\bfseries Pcl\+Viewer} (double x=1.\+0, double y=-\/1.\+0, double z=-\/1.\+0, double rot\+\_\+axis\+\_\+x=-\/0.\+5, double rot\+\_\+axis\+\_\+y=0, double rot\+\_\+axis\+\_\+z=0)
+\item 
+\mbox{\Hypertarget{classmy__slam_1_1display_1_1PclViewer_a217727858b925159f7f15559e108e149}\label{classmy__slam_1_1display_1_1PclViewer_a217727858b925159f7f15559e108e149}} 
+void {\bfseries update\+Map\+Points} (const vector$<$ cv\+::\+Point3f $>$ \&vec\+\_\+pos, const vector$<$ vector$<$ unsigned char $>$$>$ \&vec\+\_\+color)
+\item 
+\mbox{\Hypertarget{classmy__slam_1_1display_1_1PclViewer_a1c1f323ae39bea4db706a3691a1aed7e}\label{classmy__slam_1_1display_1_1PclViewer_a1c1f323ae39bea4db706a3691a1aed7e}} 
+void {\bfseries update\+Curr\+Points} (const vector$<$ cv\+::\+Point3f $>$ \&vec\+\_\+pos, const vector$<$ vector$<$ unsigned char $>$$>$ \&vec\+\_\+color)
+\item 
+\mbox{\Hypertarget{classmy__slam_1_1display_1_1PclViewer_a0162cc2e61ef1c4aa4ca0555f52ae182}\label{classmy__slam_1_1display_1_1PclViewer_a0162cc2e61ef1c4aa4ca0555f52ae182}} 
+void {\bfseries update\+Points\+In\+View} (const vector$<$ cv\+::\+Point3f $>$ \&vec\+\_\+pos, const vector$<$ vector$<$ unsigned char $>$$>$ \&vec\+\_\+color)
+\item 
+\mbox{\Hypertarget{classmy__slam_1_1display_1_1PclViewer_ae7b90cfb0cfd13b8b5ba5e5decd8e3f9}\label{classmy__slam_1_1display_1_1PclViewer_ae7b90cfb0cfd13b8b5ba5e5decd8e3f9}} 
+void {\bfseries update\+Camera\+Pose} (const cv\+::\+Mat \&R\+\_\+vec, const cv\+::\+Mat \&t, int is\+\_\+keyframe)
+\item 
+\mbox{\Hypertarget{classmy__slam_1_1display_1_1PclViewer_a7eaa470903b1dcdf39ee3fb95050b836}\label{classmy__slam_1_1display_1_1PclViewer_a7eaa470903b1dcdf39ee3fb95050b836}} 
+void {\bfseries update\+Camera\+Truth\+Pose} (const cv\+::\+Mat \&R\+\_\+vec, const cv\+::\+Mat \&t)
+\item 
+\mbox{\Hypertarget{classmy__slam_1_1display_1_1PclViewer_aa3eb55f9ebef6fc9a5a74c72bd574c6a}\label{classmy__slam_1_1display_1_1PclViewer_aa3eb55f9ebef6fc9a5a74c72bd574c6a}} 
+void {\bfseries update} ()
+\item 
+\mbox{\Hypertarget{classmy__slam_1_1display_1_1PclViewer_a8e98ecc6038971ab4a94021d7279307f}\label{classmy__slam_1_1display_1_1PclViewer_a8e98ecc6038971ab4a94021d7279307f}} 
+void {\bfseries spin\+Once} (unsigned int millisecond)
+\item 
+\mbox{\Hypertarget{classmy__slam_1_1display_1_1PclViewer_aeae319e4b80d0402c207939416ff062b}\label{classmy__slam_1_1display_1_1PclViewer_aeae319e4b80d0402c207939416ff062b}} 
+bool {\bfseries is\+Stopped} ()
+\item 
+\mbox{\Hypertarget{classmy__slam_1_1display_1_1PclViewer_a35daa617caeadd15ba8d0625c962e5ed}\label{classmy__slam_1_1display_1_1PclViewer_a35daa617caeadd15ba8d0625c962e5ed}} 
+bool {\bfseries is\+Key\+Pressed} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmy__slam_1_1display_1_1PclViewer_ac1823c16494047bb297f746bfad26ac4}\label{classmy__slam_1_1display_1_1PclViewer_ac1823c16494047bb297f746bfad26ac4}} 
+string {\bfseries viewer\+\_\+name\+\_\+}
+\item 
+\mbox{\Hypertarget{classmy__slam_1_1display_1_1PclViewer_a31b6fb06b792fe17d9d1a4a3b083328a}\label{classmy__slam_1_1display_1_1PclViewer_a31b6fb06b792fe17d9d1a4a3b083328a}} 
+string {\bfseries camera\+\_\+frame\+\_\+name\+\_\+}
+\item 
+\mbox{\Hypertarget{classmy__slam_1_1display_1_1PclViewer_a99c120259ae3f2fb023cce415dbb8535}\label{classmy__slam_1_1display_1_1PclViewer_a99c120259ae3f2fb023cce415dbb8535}} 
+cv\+::\+Mat {\bfseries cam\+\_\+\+R\+\_\+vec\+\_\+}
+\item 
+\mbox{\Hypertarget{classmy__slam_1_1display_1_1PclViewer_a602e8e7501f287784b381aad0ae23497}\label{classmy__slam_1_1display_1_1PclViewer_a602e8e7501f287784b381aad0ae23497}} 
+cv\+::\+Mat {\bfseries cam\+\_\+t\+\_\+}
+\item 
+\mbox{\Hypertarget{classmy__slam_1_1display_1_1PclViewer_a91e3f330878ec10d9916a4a3606d35d3}\label{classmy__slam_1_1display_1_1PclViewer_a91e3f330878ec10d9916a4a3606d35d3}} 
+string {\bfseries truth\+\_\+camera\+\_\+frame\+\_\+name\+\_\+}
+\item 
+\mbox{\Hypertarget{classmy__slam_1_1display_1_1PclViewer_adae89a5539143b713babcfad419c2bee}\label{classmy__slam_1_1display_1_1PclViewer_adae89a5539143b713babcfad419c2bee}} 
+cv\+::\+Mat {\bfseries truth\+\_\+cam\+\_\+\+R\+\_\+vec\+\_\+}
+\item 
+\mbox{\Hypertarget{classmy__slam_1_1display_1_1PclViewer_ae3b89cc7a75ec00fac4b748743e5b2af}\label{classmy__slam_1_1display_1_1PclViewer_ae3b89cc7a75ec00fac4b748743e5b2af}} 
+cv\+::\+Mat {\bfseries truth\+\_\+cam\+\_\+t\+\_\+}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/deeishtay/\+Documents/\+Cpp/\+Monocular-\/\+Visual-\/\+Odometry/include/my\+\_\+slam/display/pcl\+\_\+display.\+h\item 
+/home/deeishtay/\+Documents/\+Cpp/\+Monocular-\/\+Visual-\/\+Odometry/src/display/pcl\+\_\+display.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,38 @@
+\hypertarget{classmy__slam_1_1vo_1_1Map}{}\doxysection{my\+\_\+slam\+::vo\+::Map Class Reference}
+\label{classmy__slam_1_1vo_1_1Map}\index{my\_slam::vo::Map@{my\_slam::vo::Map}}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmy__slam_1_1vo_1_1Map_a21ccfdaca0876dc4f966fcdf68d336da}\label{classmy__slam_1_1vo_1_1Map_a21ccfdaca0876dc4f966fcdf68d336da}} 
+typedef std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classmy__slam_1_1vo_1_1Map}{Map}} $>$ {\bfseries Ptr}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmy__slam_1_1vo_1_1Map_a4fbda20dc55e9df6b1d36370e97edf6f}\label{classmy__slam_1_1vo_1_1Map_a4fbda20dc55e9df6b1d36370e97edf6f}} 
+void {\bfseries insert\+Key\+Frame} (Frame\+::\+Ptr frame)
+\item 
+\mbox{\Hypertarget{classmy__slam_1_1vo_1_1Map_ac94b0b7a9b53a3ef6471ec5e4f4cf913}\label{classmy__slam_1_1vo_1_1Map_ac94b0b7a9b53a3ef6471ec5e4f4cf913}} 
+void {\bfseries insert\+Map\+Point} (Map\+Point\+::\+Ptr map\+\_\+point)
+\item 
+\mbox{\Hypertarget{classmy__slam_1_1vo_1_1Map_ab8ee3b6882f1275169e5bc7b0876cf38}\label{classmy__slam_1_1vo_1_1Map_ab8ee3b6882f1275169e5bc7b0876cf38}} 
+Frame\+::\+Ptr {\bfseries find\+Key\+Frame} (int frame\+\_\+id)
+\item 
+\mbox{\Hypertarget{classmy__slam_1_1vo_1_1Map_a50c566f0e7db3ed3be98d82665e35b8a}\label{classmy__slam_1_1vo_1_1Map_a50c566f0e7db3ed3be98d82665e35b8a}} 
+bool {\bfseries has\+Key\+Frame} (int frame\+\_\+id)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmy__slam_1_1vo_1_1Map_a56c841f82b48a11cfa746b71bb503130}\label{classmy__slam_1_1vo_1_1Map_a56c841f82b48a11cfa746b71bb503130}} 
+std\+::unordered\+\_\+map$<$ int, Frame\+::\+Ptr $>$ {\bfseries keyframes\+\_\+}
+\item 
+\mbox{\Hypertarget{classmy__slam_1_1vo_1_1Map_aeaa0909a58940cbb8e714be9feb6e187}\label{classmy__slam_1_1vo_1_1Map_aeaa0909a58940cbb8e714be9feb6e187}} 
+std\+::unordered\+\_\+map$<$ int, Map\+Point\+::\+Ptr $>$ {\bfseries map\+\_\+points\+\_\+}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/deeishtay/\+Documents/\+Cpp/\+Monocular-\/\+Visual-\/\+Odometry/include/my\+\_\+slam/vo/map.\+h\item 
+/home/deeishtay/\+Documents/\+Cpp/\+Monocular-\/\+Visual-\/\+Odometry/src/vo/map.\+cpp\end{DoxyCompactItemize}

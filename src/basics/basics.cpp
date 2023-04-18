@@ -1,4 +1,13 @@
-
+/**
+ * @file basics.cpp
+ * @author your name (you@domain.com)
+ * @brief Test brief
+ * @version 0.2
+ * @date 2023-04-18
+ * 
+ * @copyright Copyright (c) 2023
+ * 
+ */
 
 #include "my_slam/basics/basics.h"
 #include <iterator>
@@ -9,6 +18,9 @@
 #include <sys/stat.h>  //mkdir
 #include <unistd.h> // access
 #include <stdlib.h> // access
+
+/// @brief create test var
+int test;
 
 namespace my_slam
 {
@@ -31,6 +43,14 @@ bool str2bool(const string &s)
     }
 }
 
+/**
+ * @brief this converts int to string
+ * 
+ * @param num number
+ * @param width width of number
+ * @param char_to_fill  char to fill
+ * @return string 
+ */
 string int2str(int num, int width, char char_to_fill)
 {
     std::stringstream ss;

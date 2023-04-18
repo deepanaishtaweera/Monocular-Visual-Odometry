@@ -1,0 +1,110 @@
+\hypertarget{classmy__slam_1_1vo_1_1Frame}{}\doxysection{my\+\_\+slam\+::vo\+::Frame Class Reference}
+\label{classmy__slam_1_1vo_1_1Frame}\index{my\_slam::vo::Frame@{my\_slam::vo::Frame}}
+
+
+Collaboration diagram for my\+\_\+slam\+::vo\+::Frame\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmy__slam_1_1vo_1_1Frame__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmy__slam_1_1vo_1_1Frame_ade55e022e771b568b433d586ae611507}\label{classmy__slam_1_1vo_1_1Frame_ade55e022e771b568b433d586ae611507}} 
+typedef std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classmy__slam_1_1vo_1_1Frame}{Frame}} $>$ {\bfseries Ptr}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmy__slam_1_1vo_1_1Frame_a0063e2aa9d531118c0bbb3890eb54aaa}\label{classmy__slam_1_1vo_1_1Frame_a0063e2aa9d531118c0bbb3890eb54aaa}} 
+void {\bfseries clear\+No\+Used} ()
+\item 
+\mbox{\Hypertarget{classmy__slam_1_1vo_1_1Frame_a085fb5ff36210b17db3a2fd513cd8a74}\label{classmy__slam_1_1vo_1_1Frame_a085fb5ff36210b17db3a2fd513cd8a74}} 
+void {\bfseries calc\+Key\+Points} ()
+\item 
+\mbox{\Hypertarget{classmy__slam_1_1vo_1_1Frame_ad5b8fca118fcecc027fcb2302c7c05cf}\label{classmy__slam_1_1vo_1_1Frame_ad5b8fca118fcecc027fcb2302c7c05cf}} 
+void {\bfseries calc\+Descriptors} ()
+\item 
+\mbox{\Hypertarget{classmy__slam_1_1vo_1_1Frame_afc3f2b85a6892737d2a1aa6d0def755b}\label{classmy__slam_1_1vo_1_1Frame_afc3f2b85a6892737d2a1aa6d0def755b}} 
+cv\+::\+Point2f {\bfseries project\+World\+Point\+To\+Image} (const cv\+::\+Point3f \&p\+\_\+world)
+\item 
+\mbox{\Hypertarget{classmy__slam_1_1vo_1_1Frame_a7cdbe61c9e7fdaf1756575cc7ea9b3ab}\label{classmy__slam_1_1vo_1_1Frame_a7cdbe61c9e7fdaf1756575cc7ea9b3ab}} 
+bool {\bfseries is\+In\+Frame} (const cv\+::\+Point3f \&p\+\_\+world)
+\item 
+\mbox{\Hypertarget{classmy__slam_1_1vo_1_1Frame_ae6abd6756bd81b86033dc7153aded863}\label{classmy__slam_1_1vo_1_1Frame_ae6abd6756bd81b86033dc7153aded863}} 
+bool {\bfseries is\+In\+Frame} (const cv\+::\+Mat \&p\+\_\+world)
+\item 
+\mbox{\Hypertarget{classmy__slam_1_1vo_1_1Frame_a19c17d5b24c7134168a28886068124bb}\label{classmy__slam_1_1vo_1_1Frame_a19c17d5b24c7134168a28886068124bb}} 
+bool {\bfseries is\+Mappoint} (int idx)
+\item 
+\mbox{\Hypertarget{classmy__slam_1_1vo_1_1Frame_a022d0533d714de1b27ba7d1fac3b6464}\label{classmy__slam_1_1vo_1_1Frame_a022d0533d714de1b27ba7d1fac3b6464}} 
+cv\+::\+Mat {\bfseries get\+Cam\+Center} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmy__slam_1_1vo_1_1Frame_a6b27d6dae461912e88a162fe65378013}\label{classmy__slam_1_1vo_1_1Frame_a6b27d6dae461912e88a162fe65378013}} 
+static Frame\+::\+Ptr {\bfseries create\+Frame} (cv\+::\+Mat rgb\+\_\+img, geometry\+::\+Camera\+::\+Ptr camera, double time\+\_\+stamp=-\/1)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmy__slam_1_1vo_1_1Frame_a5007a0f4f40bc5f08595e1a087e9926d}\label{classmy__slam_1_1vo_1_1Frame_a5007a0f4f40bc5f08595e1a087e9926d}} 
+int {\bfseries id\+\_\+}
+\item 
+\mbox{\Hypertarget{classmy__slam_1_1vo_1_1Frame_a19eb4acefd0f60b6ea231f664e52f78d}\label{classmy__slam_1_1vo_1_1Frame_a19eb4acefd0f60b6ea231f664e52f78d}} 
+double {\bfseries time\+\_\+stamp\+\_\+}
+\item 
+\mbox{\Hypertarget{classmy__slam_1_1vo_1_1Frame_a43be7b9174f9937eb7af316c022cfc2b}\label{classmy__slam_1_1vo_1_1Frame_a43be7b9174f9937eb7af316c022cfc2b}} 
+cv\+::\+Mat {\bfseries rgb\+\_\+img\+\_\+}
+\item 
+\mbox{\Hypertarget{classmy__slam_1_1vo_1_1Frame_a4c1d5cc4eb3099047b824c58c12991b9}\label{classmy__slam_1_1vo_1_1Frame_a4c1d5cc4eb3099047b824c58c12991b9}} 
+vector$<$ cv\+::\+Key\+Point $>$ {\bfseries keypoints\+\_\+}
+\item 
+\mbox{\Hypertarget{classmy__slam_1_1vo_1_1Frame_a4be080a15f75be5dbeface261b276131}\label{classmy__slam_1_1vo_1_1Frame_a4be080a15f75be5dbeface261b276131}} 
+cv\+::\+Mat {\bfseries descriptors\+\_\+}
+\item 
+\mbox{\Hypertarget{classmy__slam_1_1vo_1_1Frame_a5484e2ea104fc4b161c209c49347280b}\label{classmy__slam_1_1vo_1_1Frame_a5484e2ea104fc4b161c209c49347280b}} 
+vector$<$ vector$<$ unsigned char $>$ $>$ {\bfseries kpts\+\_\+colors\+\_\+}
+\item 
+\mbox{\Hypertarget{classmy__slam_1_1vo_1_1Frame_ad33594fddba15d6dcad650bd69ec418e}\label{classmy__slam_1_1vo_1_1Frame_ad33594fddba15d6dcad650bd69ec418e}} 
+vector$<$ cv\+::\+DMatch $>$ {\bfseries matches\+\_\+with\+\_\+ref\+\_\+}
+\item 
+\mbox{\Hypertarget{classmy__slam_1_1vo_1_1Frame_a320412a3ef758b96c0996fb7744f2ef0}\label{classmy__slam_1_1vo_1_1Frame_a320412a3ef758b96c0996fb7744f2ef0}} 
+vector$<$ cv\+::\+DMatch $>$ {\bfseries inliers\+\_\+matches\+\_\+with\+\_\+ref\+\_\+}
+\item 
+\mbox{\Hypertarget{classmy__slam_1_1vo_1_1Frame_a0378724be194877b679d04eadd1e8ab9}\label{classmy__slam_1_1vo_1_1Frame_a0378724be194877b679d04eadd1e8ab9}} 
+vector$<$ double $>$ {\bfseries triangulation\+\_\+angles\+\_\+of\+\_\+inliers\+\_\+}
+\item 
+\mbox{\Hypertarget{classmy__slam_1_1vo_1_1Frame_a3a77c6a03c2910dd1b1f055aa72bbc26}\label{classmy__slam_1_1vo_1_1Frame_a3a77c6a03c2910dd1b1f055aa72bbc26}} 
+vector$<$ cv\+::\+DMatch $>$ {\bfseries inliers\+\_\+matches\+\_\+for\+\_\+3d\+\_\+}
+\item 
+\mbox{\Hypertarget{classmy__slam_1_1vo_1_1Frame_ac01cabc8f9c0e2cb468dd6e2eb07341d}\label{classmy__slam_1_1vo_1_1Frame_ac01cabc8f9c0e2cb468dd6e2eb07341d}} 
+vector$<$ cv\+::\+Point3f $>$ {\bfseries inliers\+\_\+pts3d\+\_\+}
+\item 
+\mbox{\Hypertarget{classmy__slam_1_1vo_1_1Frame_ac2d43970c2ad0c2df54aa5583d300ded}\label{classmy__slam_1_1vo_1_1Frame_ac2d43970c2ad0c2df54aa5583d300ded}} 
+std\+::unordered\+\_\+map$<$ int, \mbox{\hyperlink{structmy__slam_1_1vo_1_1PtConn__}{Pt\+Conn}} $>$ {\bfseries inliers\+\_\+to\+\_\+mappt\+\_\+connections\+\_\+}
+\item 
+\mbox{\Hypertarget{classmy__slam_1_1vo_1_1Frame_a10a27aacf81b8a062a7469d0d0eceffc}\label{classmy__slam_1_1vo_1_1Frame_a10a27aacf81b8a062a7469d0d0eceffc}} 
+vector$<$ cv\+::\+DMatch $>$ {\bfseries matches\+\_\+with\+\_\+map\+\_\+}
+\item 
+\mbox{\Hypertarget{classmy__slam_1_1vo_1_1Frame_a16d51cabe3920d142ea68779d0daffa9}\label{classmy__slam_1_1vo_1_1Frame_a16d51cabe3920d142ea68779d0daffa9}} 
+geometry\+::\+Camera\+::\+Ptr {\bfseries camera\+\_\+}
+\item 
+\mbox{\Hypertarget{classmy__slam_1_1vo_1_1Frame_ab34f4c4880aea42c793275d50cd8c6e0}\label{classmy__slam_1_1vo_1_1Frame_ab34f4c4880aea42c793275d50cd8c6e0}} 
+cv\+::\+Mat {\bfseries T\+\_\+w\+\_\+c\+\_\+}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmy__slam_1_1vo_1_1Frame_ad94b42bf0f84bbda660a8284a28b97f0}\label{classmy__slam_1_1vo_1_1Frame_ad94b42bf0f84bbda660a8284a28b97f0}} 
+static int {\bfseries factory\+\_\+id\+\_\+} = 0
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/deeishtay/\+Documents/\+Cpp/\+Monocular-\/\+Visual-\/\+Odometry/include/my\+\_\+slam/vo/frame.\+h\item 
+/home/deeishtay/\+Documents/\+Cpp/\+Monocular-\/\+Visual-\/\+Odometry/src/vo/frame.\+cpp\end{DoxyCompactItemize}

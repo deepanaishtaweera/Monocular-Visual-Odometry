@@ -1,0 +1,54 @@
+\hypertarget{classmy__slam_1_1vo_1_1VisualOdometry}{}\doxysection{my\+\_\+slam\+::vo\+::Visual\+Odometry Class Reference}
+\label{classmy__slam_1_1vo_1_1VisualOdometry}\index{my\_slam::vo::VisualOdometry@{my\_slam::vo::VisualOdometry}}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmy__slam_1_1vo_1_1VisualOdometry_a43301646c790759ff435341efd1b25f7}\label{classmy__slam_1_1vo_1_1VisualOdometry_a43301646c790759ff435341efd1b25f7}} 
+typedef std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classmy__slam_1_1vo_1_1VisualOdometry}{Visual\+Odometry}} $>$ {\bfseries Ptr}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmy__slam_1_1vo_1_1VisualOdometry_ab83d8ac2487a266f8c7741499659df87}\label{classmy__slam_1_1vo_1_1VisualOdometry_ab83d8ac2487a266f8c7741499659df87}} 
+void {\bfseries add\+Frame} (vo\+::\+Frame\+::\+Ptr frame)
+\item 
+\mbox{\Hypertarget{classmy__slam_1_1vo_1_1VisualOdometry_affd0ba9615967775906ffc9f5280da8b}\label{classmy__slam_1_1vo_1_1VisualOdometry_affd0ba9615967775906ffc9f5280da8b}} 
+bool {\bfseries is\+Initialized} ()
+\item 
+\mbox{\Hypertarget{classmy__slam_1_1vo_1_1VisualOdometry_a2d709435fb2c7f4ab512332942437d33}\label{classmy__slam_1_1vo_1_1VisualOdometry_a2d709435fb2c7f4ab512332942437d33}} 
+Frame\+::\+Ptr {\bfseries get\+Prev\+Ref} ()
+\item 
+\mbox{\Hypertarget{classmy__slam_1_1vo_1_1VisualOdometry_a315331dc47cd8a0f3264d9a411ccecce}\label{classmy__slam_1_1vo_1_1VisualOdometry_a315331dc47cd8a0f3264d9a411ccecce}} 
+Map\+::\+Ptr {\bfseries get\+Map} ()
+\item 
+\mbox{\Hypertarget{classmy__slam_1_1vo_1_1VisualOdometry_a652679f8a6a4a56cc9add634339e2afa}\label{classmy__slam_1_1vo_1_1VisualOdometry_a652679f8a6a4a56cc9add634339e2afa}} 
+bool {\bfseries check\+Large\+Move\+For\+Add\+Key\+Frame\+\_\+} (Frame\+::\+Ptr curr, Frame\+::\+Ptr ref)
+\item 
+\mbox{\Hypertarget{classmy__slam_1_1vo_1_1VisualOdometry_aa750cede3c76aa366f40eece3184430b}\label{classmy__slam_1_1vo_1_1VisualOdometry_aa750cede3c76aa366f40eece3184430b}} 
+void {\bfseries optimize\+Map\+\_\+} ()
+\item 
+\mbox{\Hypertarget{classmy__slam_1_1vo_1_1VisualOdometry_a192eb9211823ebe2d14dcf9a1e9e0199}\label{classmy__slam_1_1vo_1_1VisualOdometry_a192eb9211823ebe2d14dcf9a1e9e0199}} 
+bool {\bfseries pose\+Estimation\+Pn\+P\+\_\+} ()
+\item 
+\mbox{\Hypertarget{classmy__slam_1_1vo_1_1VisualOdometry_acbcdfc61786de33e259b7ce94e7ad663}\label{classmy__slam_1_1vo_1_1VisualOdometry_acbcdfc61786de33e259b7ce94e7ad663}} 
+void {\bfseries add\+Key\+Frame\+\_\+} (Frame\+::\+Ptr keyframe)
+\item 
+\mbox{\Hypertarget{classmy__slam_1_1vo_1_1VisualOdometry_a4a8d7e4e336c604c215efd0d85804d8c}\label{classmy__slam_1_1vo_1_1VisualOdometry_a4a8d7e4e336c604c215efd0d85804d8c}} 
+void {\bfseries push\+Curr\+Points\+To\+Map\+\_\+} ()
+\item 
+\mbox{\Hypertarget{classmy__slam_1_1vo_1_1VisualOdometry_a43ef5187abeb14b9adba4dc673fd6a28}\label{classmy__slam_1_1vo_1_1VisualOdometry_a43ef5187abeb14b9adba4dc673fd6a28}} 
+void {\bfseries get\+Mappoints\+In\+Current\+View\+\_\+} (vector$<$ Map\+Point\+::\+Ptr $>$ \&candidate\+\_\+mappoints\+\_\+in\+\_\+map, vector$<$ cv\+::\+Point2f $>$ \&candidate\+\_\+mappoints\+\_\+in\+\_\+2d\+\_\+image, cv\+::\+Mat \&corresponding\+\_\+mappoints\+\_\+descriptors)
+\item 
+\mbox{\Hypertarget{classmy__slam_1_1vo_1_1VisualOdometry_a9a103bd09c067c0a6b6cdd58702c001f}\label{classmy__slam_1_1vo_1_1VisualOdometry_a9a103bd09c067c0a6b6cdd58702c001f}} 
+double {\bfseries get\+View\+Angle\+\_\+} (Frame\+::\+Ptr frame, Map\+Point\+::\+Ptr point)
+\item 
+\mbox{\Hypertarget{classmy__slam_1_1vo_1_1VisualOdometry_a04f00b1f77901d408ccc65d09df01a99}\label{classmy__slam_1_1vo_1_1VisualOdometry_a04f00b1f77901d408ccc65d09df01a99}} 
+void {\bfseries call\+Bundle\+Adjustment\+\_\+} ()
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/deeishtay/\+Documents/\+Cpp/\+Monocular-\/\+Visual-\/\+Odometry/include/my\+\_\+slam/vo/vo.\+h\item 
+/home/deeishtay/\+Documents/\+Cpp/\+Monocular-\/\+Visual-\/\+Odometry/src/vo/vo.\+cpp\item 
+/home/deeishtay/\+Documents/\+Cpp/\+Monocular-\/\+Visual-\/\+Odometry/src/vo/vo\+\_\+add\+Frame.\+cpp\end{DoxyCompactItemize}

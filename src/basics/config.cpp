@@ -1,4 +1,13 @@
-
+/**
+ * @file config.cpp
+ * @author your name (you@domain.com)
+ * @brief 
+ * @version 0.1
+ * @date 2023-04-18
+ * 
+ * @copyright Copyright (c) 2023
+ * 
+ */
 #include "my_slam/basics/config.h"
 
 namespace my_slam
@@ -6,8 +15,14 @@ namespace my_slam
 namespace basics
 {
 
+/// @brief this is a shared pointer
 std::shared_ptr<Config> Config::config_ = nullptr;
 
+/**
+ * @brief 
+ * 
+ * @param filename input filename
+ */
 void Config::setParameterFile(const std::string &filename)
 {
     if (config_ == nullptr) // if no instance, create one. So there will be at most one instance.

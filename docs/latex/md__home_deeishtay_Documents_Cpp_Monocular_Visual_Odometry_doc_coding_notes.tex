@@ -1,0 +1,10 @@
+
+\begin{DoxyItemize}
+\item speed\+: almost same as array \href{https://stackoverflow.com/questions/8848575/fastest-way-to-reset-every-value-of-stdvectorint-to-0}{\texttt{ https\+://stackoverflow.\+com/questions/8848575/fastest-\/way-\/to-\/reset-\/every-\/value-\/of-\/stdvectorint-\/to-\/0}}
+\item set all to zero \href{https://stackoverflow.com/questions/8848575/fastest-way-to-reset-every-value-of-stdvectorint-to-0}{\texttt{ https\+://stackoverflow.\+com/questions/8848575/fastest-\/way-\/to-\/reset-\/every-\/value-\/of-\/stdvectorint-\/to-\/0}} std\+::fill(v.\+begin(), v.\+end(), 0);//13.4s. But this is recommaneded stype. memset(\&v\mbox{[}0\mbox{]}, 0, v.\+size() $\ast$ sizeof v\mbox{[}0\mbox{]}); //0.125s
+\item resize and clear
+\item copy \`{} vector B(3,0) vector A = B; // This is a memory copy. Later if change B, A won\textquotesingle{}t change. \`{} use swap
+\end{DoxyItemize}\hypertarget{md__home_deeishtay_Documents_Cpp_Monocular_Visual_Odometry_doc_coding_notes_autotoc_md21}{}\doxysubsection{deque}\label{md__home_deeishtay_Documents_Cpp_Monocular_Visual_Odometry_doc_coding_notes_autotoc_md21}
+deque is basically same as vector, but\+: ~\newline
+ supports two-\/ends constant-\/time insert and delete, while vector only supports one end.\hypertarget{md__home_deeishtay_Documents_Cpp_Monocular_Visual_Odometry_doc_coding_notes_autotoc_md22}{}\doxysection{Euler Angle of cv\+::\+Rodrigues(input, output)}\label{md__home_deeishtay_Documents_Cpp_Monocular_Visual_Odometry_doc_coding_notes_autotoc_md22}
+Axis of r\+\_\+vec\+: x, y, z 

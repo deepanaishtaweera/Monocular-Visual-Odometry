@@ -1,0 +1,88 @@
+\hypertarget{basics_8cpp}{}\doxysection{/home/deeishtay/\+Documents/\+Cpp/\+Monocular-\/\+Visual-\/\+Odometry/src/basics/basics.cpp File Reference}
+\label{basics_8cpp}\index{/home/deeishtay/Documents/Cpp/Monocular-\/Visual-\/Odometry/src/basics/basics.cpp@{/home/deeishtay/Documents/Cpp/Monocular-\/Visual-\/Odometry/src/basics/basics.cpp}}
+
+
+Test brief.  
+
+
+{\ttfamily \#include \char`\"{}my\+\_\+slam/basics/basics.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$iterator$>$}\newline
+{\ttfamily \#include $<$assert.\+h$>$}\newline
+{\ttfamily \#include $<$chrono$>$}\newline
+{\ttfamily \#include $<$ctime$>$}\newline
+{\ttfamily \#include $<$sys/types.\+h$>$}\newline
+{\ttfamily \#include $<$sys/stat.\+h$>$}\newline
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+Include dependency graph for basics.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{basics_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{basics_8h_a38583cbf96a97572913f9e5ac21c3c52}\label{basics_8h_a38583cbf96a97572913f9e5ac21c3c52}} 
+bool {\bfseries my\+\_\+slam\+::basics\+::str2bool} (const string \&s)
+\item 
+string {\bfseries my\+\_\+slam\+::basics\+::int2str} (int num, int width, char char\+\_\+to\+\_\+fill)
+\begin{DoxyCompactList}\small\item\em this converts int to string \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{basics_8h_a8f93d0ca75a2dba277ed493f20ddd4ca}\label{basics_8h_a8f93d0ca75a2dba277ed493f20ddd4ca}} 
+vector$<$ double $>$ {\bfseries my\+\_\+slam\+::basics\+::str2vecdouble} (const string \&point\+Line)
+\item 
+\mbox{\Hypertarget{basics_8h_ad1add8b22597ab07cbc7acc7bad791a7}\label{basics_8h_ad1add8b22597ab07cbc7acc7bad791a7}} 
+vector$<$ int $>$ {\bfseries my\+\_\+slam\+::basics\+::get\+Intersection} (vector$<$ int $>$ v1, vector$<$ int $>$ v2)
+\item 
+\mbox{\Hypertarget{basics_8h_ab04cf0d25bd44469a46fa88a2e9bb2a3}\label{basics_8h_ab04cf0d25bd44469a46fa88a2e9bb2a3}} 
+bool {\bfseries my\+\_\+slam\+::basics\+::makedirs} (const string \&dir)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{basics_8cpp_a1bd3f5fbccb1628eb13dda4cd02633a4}\label{basics_8cpp_a1bd3f5fbccb1628eb13dda4cd02633a4}} 
+int \mbox{\hyperlink{basics_8cpp_a1bd3f5fbccb1628eb13dda4cd02633a4}{test}}
+\begin{DoxyCompactList}\small\item\em create test var \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Test brief. 
+
+\begin{DoxyAuthor}{Author}
+your name (\href{mailto:you@domain.com}{\texttt{ you@domain.\+com}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+2 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2023-\/04-\/18
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2023 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{basics_8h_a4346d0309edcb0ee14f6e748e35173db}\label{basics_8h_a4346d0309edcb0ee14f6e748e35173db}} 
+\index{basics.cpp@{basics.cpp}!int2str@{int2str}}
+\index{int2str@{int2str}!basics.cpp@{basics.cpp}}
+\doxysubsubsection{\texorpdfstring{int2str()}{int2str()}}
+{\footnotesize\ttfamily string my\+\_\+slam\+::basics\+::int2str (\begin{DoxyParamCaption}\item[{int}]{num,  }\item[{int}]{width,  }\item[{char}]{char\+\_\+to\+\_\+fill }\end{DoxyParamCaption})}
+
+
+
+this converts int to string 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num} & number \\
+\hline
+{\em width} & width of number \\
+\hline
+{\em char\+\_\+to\+\_\+fill} & char to fill \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
